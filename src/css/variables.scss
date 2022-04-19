@@ -1,0 +1,69 @@
+// Color
+
+$background-color: rgba(0, 0, 0, 1);
+$background-color-translucent: rgba(0, 0, 0, 0.5);
+
+$text-color: rgba(255, 255, 255, 1);
+$text-color-secondary: rgba(255, 255, 255, 0.5);
+
+$primary-color: #7E3FF2;
+$secondary-color: #F2E93F;
+
+// Font Size
+
+$font-size-01: 0.75rem;
+$font-size-02: 0.875rem;
+$font-size-03: 1rem;
+$font-size-04: 1.125rem;
+$font-size-05: 1.25rem;
+$font-size-06: 1.5rem;
+$font-size-07: 1.75rem;
+$font-size-08: 2rem;
+$font-size-09: 2.25rem;
+$font-size-10: 2.625rem;
+$font-size-11: 3rem;
+$font-size-12: 3.375rem;
+$font-size-13: 3.75rem;
+$font-size-14: 4.25rem;
+$font-size-15: 4.75rem;
+$font-size-16: 5.25rem;
+$font-size-17: 5.75rem;
+
+// Font Weight
+
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-bold: 600;
+
+
+// Spacing
+
+$spacing-01: 2px;
+$spacing-02: 4px;
+$spacing-03: 8px;
+$spacing-04: 12px;
+$spacing-05: 16px;
+$spacing-06: 24px;
+$spacing-07: 32px;
+$spacing-08: 40px;
+$spacing-09: 48px;
+$spacing-10: 64px;
+$spacing-11: 80px;
+$spacing-12: 96px;
+$spacing-13: 160px;
+$spacing-14: 192px;
+$spacing-15: 256px;
+$spacing-16: 320px;
+$spacing-17: 384px;
+$spacing-18: 448px;
+$spacing-19: 512px;
+$spacing-20: 640px;
+
+// Effects
+
+$translucent: saturate(180%) blur(10px);
+
+// Transitions
+
+$transition-duration: 0.3s;
+$transition-ease: ease-in-out;
