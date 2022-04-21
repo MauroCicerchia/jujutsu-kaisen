@@ -13,7 +13,7 @@ $secondary-color-light: rgb(52, 182, 255);
 
 $background-color: $black;
 $secondary-background-color: $darker-gray;
-$background-color-translucent: rgba(0, 0, 0, 0.85);
+$background-color-translucent: rgba(0, 0, 0, 0.75);
 
 $text-color: $white;
 $text-color-hover: $primary-color;
@@ -87,6 +87,12 @@ $transition-ease: ease-in-out;
     padding: $spacing-2 $spacing-6;
     border-radius: $spacing-4;
     background-color: $secondary-background-color;
+}
+
+.centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .rounded {

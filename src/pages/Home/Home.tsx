@@ -2,6 +2,7 @@ import _ from "lodash";
 import { Parallax } from "react-parallax";
 import banner from "/img/banner.webp";
 import logo from "/img/logo.png";
+import classNames from "classnames";
 import styles from "./Home.module.scss";
 
 export default function Home() {
@@ -18,13 +19,16 @@ export default function Home() {
           <img className={styles.logo} src={logo} />
         </div>
       </Parallax>
-      <div className={styles.container}>
-        {_.times(50, (i) => (
-          <h1 key={i}>
-            Meet your favorite{" "}
-            <span className={styles.gradient}>Jujutsu Kaisen</span> characters!
-          </h1>
-        ))}
+      <div className={classNames(styles.container, styles.centered)}>
+        <div>
+          {_.times(50, (i) => (
+            <h1 key={i}>
+              Meet your favorite{" "}
+              <span className={styles.gradient}>Jujutsu Kaisen</span>{" "}
+              characters!
+            </h1>
+          ))}
+        </div>
       </div>
     </div>
   );
