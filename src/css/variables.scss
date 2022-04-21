@@ -3,11 +3,13 @@
 $background-color: rgba(0, 0, 0, 1);
 $background-color-translucent: rgba(0, 0, 0, 0.5);
 
-$text-color: rgba(255, 255, 255, 1);
-$text-color-secondary: rgba(255, 255, 255, 0.5);
+$primary-color: rgb(162, 68, 255);
+$secondary-color: rgb(56, 123, 255);
+$secondary-color-light: rgb(52, 182, 255);
 
-$primary-color: #7E3FF2;
-$secondary-color: #F2E93F;
+$text-color: rgba(255, 255, 255, 1);
+$text-color-hover: $primary-color;
+$text-color-secondary: rgba(255, 255, 255, 0.5);
 
 // Font Size
 
@@ -65,5 +67,28 @@ $translucent: saturate(180%) blur(10px);
 
 // Transitions
 
-$transition-duration: 0.3s;
+$transition-duration: 0.2s;
 $transition-ease: ease-in-out;
+
+// Classes
+.gradient {
+    display: inline-block;
+    background-position-x: 0px;
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: $secondary-color;
+    background-image: linear-gradient(90deg, $primary-color 0%, $secondary-color-light 50%, $primary-color 100%);
+    animation: 3s ease-in-out 0s infinite normal none running gradient-keyframes;
+}
+
+@keyframes gradient-keyframes {
+    0% {
+        background-position-x: 0%;
+    }
+
+    100% {
+        background-position-x: -200%;
+    }
+}
