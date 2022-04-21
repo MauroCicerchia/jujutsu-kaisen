@@ -1,4 +1,5 @@
 import { Route, Routes } from "react-router-dom";
+import { Characters, Home } from "pages";
 import Navbar from "components/navbar";
 import styles from "css/App.module.scss";
 
@@ -7,23 +8,8 @@ function App() {
     <div className={styles.app}>
       <Navbar />
       <Routes>
-        <Route
-          element={
-            <h1>
-              Meet your favorite{" "}
-              <span className={styles.gradient}>Jujutsu Kaisen</span> characters
-            </h1>
-          }
-          path="/"
-        />
-        <Route
-          element={
-            <h1>
-              <span className={styles.gradient}>Characters</span>
-            </h1>
-          }
-          path="/characters"
-        />
+        <Route element={<Home />} path="/" />
+        <Route element={<Characters />} path="/characters" />
       </Routes>
     </div>
   );

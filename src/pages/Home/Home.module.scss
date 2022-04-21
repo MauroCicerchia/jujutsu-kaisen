@@ -1,0 +1,16 @@
+@import "css/variables.scss";
+
+.banner {
+    min-height: 600px;
+}
+
+.logoContainer {
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: $spacing-18;
+}

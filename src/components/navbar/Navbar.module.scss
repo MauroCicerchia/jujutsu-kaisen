@@ -1,11 +1,29 @@
 @import "css/variables.scss";
 
+.navbar {
+    @extend .sticky, .translucent;
+    display: flex;
+    align-items: center;
+    background-color: $background-color-translucent;
+    color: $white;
+    font-weight: bold;
+}
+
+.logo {
+    width: $spacing-13;
+}
+
+.links {
+    display: flex;
+    gap: $spacing-7;
+    margin: 0 $spacing-9;
+}
+
 .link {
     color: $text-color;
     text-decoration: none;
-    font-size: 1.5rem;
-    font-weight: bold;
-    padding: $spacing-02;
+    font-weight: $font-weight-regular;
+    font-size: $font-size-5;
     transition: color $transition-duration $transition-ease;
     &:hover {
         color: $text-color-hover;

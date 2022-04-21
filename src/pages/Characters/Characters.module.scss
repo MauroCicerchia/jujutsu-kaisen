@@ -1,0 +1,6 @@
+@import "css/variables.scss";
+
+.characters {
+    @extend .secondaryContainer;
+    background-color: $secondary-background-color;
+}
