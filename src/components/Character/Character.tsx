@@ -1,6 +1,8 @@
 import classNames from "classnames";
 import React, { memo } from "react";
+import Button from "components/Button";
 import { Link } from "react-router-dom";
+
 import styles from "./Character.module.scss";
 
 type Props = {
@@ -30,9 +32,11 @@ export default memo(function Character({
           <Link to={`/character/${id}`}>{name}</Link>
         </h3>
         <p className={styles.description}>{description}</p>
-        <button className={styles.button}>
-          <Link to={`/character/${id}`}>View</Link>
-        </button>
+        <div className={styles.button}>
+          <Link to={`/character/${id}`}>
+            <Button>View more</Button>
+          </Link>
+        </div>
       </div>
     </div>
   );

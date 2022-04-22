@@ -14,12 +14,14 @@ $secondary-color-light: rgb(52, 182, 255);
 $background-color: $black;
 $secondary-background-color: $darker-gray;
 $background-color-translucent: rgba(0, 0, 0, 0.75);
+$secondary-background-color-translucent: rgba(22, 24, 28, 0.75);
 
 $text-color: $white;
 $text-color-hover: $primary-color;
 $text-color-secondary: $gray;
 
 $gradient: linear-gradient(90deg, $primary-color 0%, $secondary-color-light 50%, $primary-color 100%);
+$gradient2: linear-gradient(315deg, $primary-color 0%, $secondary-color-light 50%, $primary-color 100%);
 
 // Font Size
 

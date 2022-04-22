@@ -16,7 +16,7 @@
 }
 
 .image {
-    height: $spacing-19;
+    height: $spacing-16;
     overflow: hidden;
     object-fit: cover;
     border-radius: $spacing-4 0 0 $spacing-4;
@@ -26,18 +26,31 @@
 
 .info {
     grid-column: span 8;
-    padding: $spacing-5 $spacing-10;
+    padding: 0 $spacing-7;
 }
 
 .name {
-    font-size: $font-size-8;
+    font-size: $font-size-7;
     font-weight: bold;
+    margin: $spacing-6 0;
+
+    & > a:hover {
+        color: $text-color-hover;
+    }
 }
 
 .description {
-    font-size: $font-size-4;
+    font-size: $font-size-3;
     font-weight: $font-weight-thin;
     color: $text-color-secondary;
+    margin: $spacing-5 0;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: $spacing-9;
 }
 
 .fushiguro_megumi {
@@ -45,5 +58,9 @@
 }
 
 .kugisaki_nobara {
-    object-position: left;
+    object-position: 60% 50%;
+}
+
+.gojo_satoru {
+    object-position: right;
 }
