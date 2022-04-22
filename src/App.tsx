@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
-import { Characters, Home } from "pages";
-import Navbar from "components/navbar";
+import Home from "pages/Home";
+import Characters from "pages/Characters";
+import Navbar from "components/Navbar";
 import styles from "css/App.module.scss";
 
 function App() {

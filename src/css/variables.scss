@@ -19,6 +19,8 @@ $text-color: $white;
 $text-color-hover: $primary-color;
 $text-color-secondary: $gray;
 
+$gradient: linear-gradient(90deg, $primary-color 0%, $secondary-color-light 50%, $primary-color 100%);
+
 // Font Size
 
 $font-size-1: 0.75rem;
@@ -41,6 +43,7 @@ $font-size-17: 5.75rem;
 
 // Font Weight
 
+$font-weight-thin: 100;
 $font-weight-light: 300;
 $font-weight-regular: 400;
 $font-weight-bold: 600;
@@ -117,7 +120,7 @@ $transition-ease: ease-in-out;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-color: $secondary-color;
-    background-image: linear-gradient(90deg, $primary-color 0%, $secondary-color-light 50%, $primary-color 100%);
+    background-image: $gradient;
     animation: 3s ease-in-out 0s infinite normal none running gradient-keyframes;
 }
 

@@ -1,0 +1,49 @@
+@import "css/variables.scss";
+
+.characterContainer {
+    @extend .secondaryContainer;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: center;
+    padding: 0;
+}
+
+.imageContainer {
+    grid-column: span 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image {
+    height: $spacing-19;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: $spacing-4 0 0 $spacing-4;
+    z-index: 2;
+}
+
+
+.info {
+    grid-column: span 8;
+    padding: $spacing-5 $spacing-10;
+}
+
+.name {
+    font-size: $font-size-8;
+    font-weight: bold;
+}
+
+.description {
+    font-size: $font-size-4;
+    font-weight: $font-weight-thin;
+    color: $text-color-secondary;
+}
+
+.fushiguro_megumi {
+    object-position: 40% 50%;
+}
+
+.kugisaki_nobara {
+    object-position: left;
+}

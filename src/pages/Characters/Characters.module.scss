@@ -1,6 +1,8 @@
 @import "css/variables.scss";
 
-.characters {
-    @extend .secondaryContainer;
-    background-color: $secondary-background-color;
+.charactersContainer {
+    @extend .container;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax($spacing-20, 1fr));
+    gap: $spacing-6;
 }

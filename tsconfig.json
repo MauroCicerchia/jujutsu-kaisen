@@ -21,6 +21,9 @@
       "css/*": [
         "src/css/*"
       ],
+      "data/*": [
+        "src/data/*"
+      ],
       "pages/*": [
         "src/pages/*"
       ],
