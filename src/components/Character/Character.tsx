@@ -19,25 +19,29 @@ export default memo(function Character({
   image,
 }: Props) {
   return (
-    <div className={styles.characterContainer}>
-      <div className={styles.imageContainer}>
-        <img
-          alt={name}
-          className={classNames(styles.image, styles[id])}
-          src={image}
-        />
-      </div>
-      <div className={styles.info}>
-        <h3 className={styles.name}>
-          <Link to={`/character/${id}`}>{name}</Link>
-        </h3>
-        <p className={styles.description}>{description}</p>
-        <div className={styles.button}>
-          <Link to={`/character/${id}`}>
-            <Button>View more</Button>
-          </Link>
+    <Link to={`/character/${id}`}>
+      <div className={styles.characterContainer}>
+        <div className={styles.imageContainer}>
+          <img
+            alt={name}
+            className={classNames(styles.image, styles[id])}
+            src={image}
+          />
+        </div>
+        <div className={styles.infoContainer}>
+          <div className={styles.info}>
+            <h3 className={styles.name}>
+              <Link to={`/character/${id}`}>{name}</Link>
+            </h3>
+            <p className={styles.description}>{description}</p>
+          </div>
+          <div className={styles.button}>
+            <Link to={`/character/${id}`}>
+              <Button>View more</Button>
+            </Link>
+          </div>
         </div>
       </div>
-    </div>
+    </Link>
   );
 });

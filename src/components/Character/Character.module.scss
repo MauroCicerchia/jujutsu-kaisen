@@ -6,6 +6,17 @@
     grid-template-columns: repeat(12, 1fr);
     align-items: center;
     padding: 0;
+    transition: all $transition-duration / 3 $transition-ease;
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.02);
+        a {
+            color: $text-color-hover;
+        }
+    }
+    a {
+        transition: all $transition-duration $transition-ease;
+    }
 }
 
 .imageContainer {
@@ -24,19 +35,20 @@
 }
 
 
-.info {
+.infoContainer {
+    height: 65%;
     grid-column: span 8;
     padding: 0 $spacing-7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .name {
     font-size: $font-size-7;
     font-weight: bold;
     margin: $spacing-6 0;
-
-    & > a:hover {
-        color: $text-color-hover;
-    }
+    animation: all $transition-duration $transition-ease;
 }
 
 .description {
@@ -44,13 +56,14 @@
     font-weight: $font-weight-thin;
     color: $text-color-secondary;
     margin: $spacing-5 0;
+    font-style: italic;
 }
 
 .button {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin-top: $spacing-9;
+    // margin-top: $spacing-9;
 }
 
 .fushiguro_megumi {
@@ -61,6 +74,14 @@
     object-position: 60% 50%;
 }
 
+.panda {
+    object-position: 55% 50%;
+}
+
 .gojo_satoru {
     object-position: right;
+}
+
+.nanami_kento {
+    object-position: 30% 70%;
 }

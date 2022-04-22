@@ -5,5 +5,4 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax($spacing-18, 1fr));
     gap: $spacing-6;
-    padding: $spacing-10;
 }

@@ -4,6 +4,7 @@
     @extend .sticky, .translucent;
     display: flex;
     align-items: center;
+    padding: $spacing-5 $spacing-10;
     background-color: $secondary-background-color-translucent;
     color: $white;
     font-weight: bold;

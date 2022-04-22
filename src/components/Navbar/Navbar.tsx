@@ -1,4 +1,3 @@
-import classNames from "classnames";
 import React, { memo } from "react";
 import { Link } from "react-router-dom";
 import logo from "/img/logo.png";
@@ -6,7 +5,7 @@ import styles from "./Navbar.module.scss";
 
 export default memo(function Navbar() {
   return (
-    <div className={classNames(styles.container, styles.navbar)}>
+    <div className={styles.navbar}>
       <Link to="/">
         <img className={styles.logo} src={logo} />
       </Link>
