@@ -2,12 +2,11 @@ import _ from "lodash";
 import { Parallax } from "react-parallax";
 import banner from "/img/banner.webp";
 import logo from "/img/logo.png";
-import classNames from "classnames";
 import styles from "./Home.module.scss";
 
 export default function Home() {
   return (
-    <section>
+    <main>
       <Parallax
         bgImage={banner}
         bgImageAlt="jujutsu-kaisen-banner"
@@ -19,7 +18,10 @@ export default function Home() {
           <img className={styles.logo} src={logo} />
         </div>
       </Parallax>
-      <main className={classNames(styles.container, styles.centered)}></main>
-    </section>
+      <section className={styles.main}>
+        <h1 className={styles.title}>Jujutsu Kaisen</h1>
+        <h2 className={styles.subtitle}>The new king of Shonen</h2>
+      </section>
+    </main>
   );
 }
