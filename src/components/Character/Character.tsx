@@ -20,7 +20,7 @@ export default memo(function Character({
 }: Props) {
   return (
     <Link to={`/character/${id}`}>
-      <div className={styles.characterContainer}>
+      <section className={styles.characterContainer}>
         <div className={styles.imageContainer}>
           <img
             alt={name}
@@ -41,7 +41,7 @@ export default memo(function Character({
             </Link>
           </div>
         </div>
-      </div>
+      </section>
     </Link>
   );
 });

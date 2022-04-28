@@ -5,18 +5,18 @@ import styles from "./Navbar.module.scss";
 
 export default memo(function Navbar() {
   return (
-    <div className={styles.navbar}>
+    <header className={styles.navbar}>
       <Link to="/">
         <img className={styles.logo} src={logo} />
       </Link>
-      <div className={styles.links}>
+      <nav className={styles.links}>
         <Link className={styles.link} to="/">
           Home
         </Link>
         <Link className={styles.link} to="/characters">
           Characters
         </Link>
-      </div>
-    </div>
+      </nav>
+    </header>
   );
 });

@@ -5,10 +5,10 @@ import styles from "./Characters.module.scss";
 
 export default function Characters() {
   return (
-    <div className={styles.charactersContainer}>
+    <main className={styles.charactersContainer}>
       {characters.map((character) => (
         <Character key={character.id} {...character} />
       ))}
-    </div>
+    </main>
   );
 }

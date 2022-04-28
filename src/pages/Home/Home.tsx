@@ -7,7 +7,7 @@ import styles from "./Home.module.scss";
 
 export default function Home() {
   return (
-    <div>
+    <section>
       <Parallax
         bgImage={banner}
         bgImageAlt="jujutsu-kaisen-banner"
@@ -19,17 +19,7 @@ export default function Home() {
           <img className={styles.logo} src={logo} />
         </div>
       </Parallax>
-      <div className={classNames(styles.container, styles.centered)}>
-        <div>
-          {_.times(50, (i) => (
-            <h1 key={i}>
-              Meet your favorite{" "}
-              <span className={styles.gradient}>Jujutsu Kaisen</span>{" "}
-              characters!
-            </h1>
-          ))}
-        </div>
-      </div>
-    </div>
+      <main className={classNames(styles.container, styles.centered)}></main>
+    </section>
   );
 }
